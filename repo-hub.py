@@ -3,6 +3,7 @@ import os
 current_directory = (os.path.basename(os.getcwd()))
 
 def create_repository():
+    os.system(f"git create -d {current_directory}")
     os.system(f'echo # {current_directory} >> README.md')
     os.system("git init .")
     os.system("git add .")
