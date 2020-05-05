@@ -33,5 +33,3 @@
 - [ ] pull requests
 - [ ] support for branches (create and push)
 - [ ] merge
-=======
->>>>>>> a9a8d3c0f37533d3af4478e7ea0011154b28f919
