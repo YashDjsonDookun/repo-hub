@@ -13,6 +13,7 @@ def create_repository():
 def push_to_repository(commitArg):
     os.system("git add .")
     os.system(f'git commit -m "{commitArg}"')
+    os.system("git push origin master")
 
 # create_repository()
 push_to_repository("Fixed readme")
