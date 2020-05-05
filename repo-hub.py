@@ -9,9 +9,10 @@ def create_repository():
     os.system('git commit -m "Initial Commit"')
     os.system("hub create")
     os.system("git push origin master")
-    # pass
 
-def push_to_repository():
-    pass
+def push_to_repository(commitArg):
+    os.system("git add .")
+    os.system(f'git commit -m "{commitArg}"')
 
-create_repository()
+# create_repository()
+push_to_repository("Fixed readme")
