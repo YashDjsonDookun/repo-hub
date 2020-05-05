@@ -37,24 +37,23 @@ try:
 except getopt.GetoptError:
     print('Incorrect Command, Use:')
     print('    python3 repo-hub.py -h or --help for any help')
-    exit(2)
+    sys.exit(2)
 for opt, arg in opts:
     if opt == '-h':
         print("Usage:")
         print('    python3 repo-hub.py -c or --create to create new repository and push to it')
-        print(
-            '    python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository')
-        exit()
+        print('    python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository')
+        sys.exit()
     elif opt in ("-c", "--create"):
         if len(arg) != 0:
             print("-c / --create does not take any additinal arguments")
             print('Usage: python3 repo-hub.py -c or --create to create new repository and push to it')
-            exit()
+            sys.exit()
         create_repository()
-        exit()
+        sys.exit()
     elif opt in ("-p", "--push"):
         if len(arg) == 0:
             print('Usage: python3 repo-hub.py -p or --push "Commit Message" to push to current remote repository')
             exit()
         push_to_repository(arg)
-        exit()
+        sys.exit()
