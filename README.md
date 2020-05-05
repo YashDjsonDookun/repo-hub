@@ -28,7 +28,7 @@
 ~~~
 <<<<<<< HEAD
 
-### What I'll Probably add in the future:
+### What I'll Probably add in the future (Do not hesitate to contribute if you want):
 - [ ] pull requests
 - [ ] support for branches (create and push)
 - [ ] merge
