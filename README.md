@@ -2,7 +2,7 @@
 
 ### Like I once said:
 
-> I AM LAZY ~Djson 😎
+> I AM LAZY ~Djson 😒
 
 🤡 This script requires both **_git_** and **_hub_** to be installed on your machines.
 (You're expected to know how it's done, Not gonna explain...)
