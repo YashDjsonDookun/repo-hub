@@ -13,8 +13,8 @@
 (Figure this out too)
 
 ### What does it do?
-    -   provide the ability to create a remote repository within the current directory and push<br/>to it
-    -   provide the ability to push to the existing remote repository within the current directory
+    -   provides the ability to create a remote repository within the current directory and push<br/>to it
+    -   provides the ability to push to the existing remote repository within the current directory
 (current directory here means the project directory that you are working on)
 
 ### Usage:
