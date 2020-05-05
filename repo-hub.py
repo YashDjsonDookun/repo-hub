@@ -2,7 +2,6 @@ import os
 import sys
 import getopt
 
-# commandOne, commandTwo = argv
 current_directory = (os.path.basename(os.getcwd()))
 
 
