@@ -2,7 +2,7 @@
 
 ### Like I once said:
 
-> I AM LAZY ~Djson 😎
+> I AM LAZY ~Djson 😒
 
 🤡 This script requires both **_git_** and **_hub_** to be installed on your machines.
 (You're expected to know how it's done, Not gonna explain...)
@@ -13,7 +13,7 @@
 (Figure this out too)
 
 ### What does it do?
-    -   provides the ability to create a remote repository within the current directory and push<br/>to it
+    -   provides the ability to create a remote repository within the current directory and push to it
     -   provides the ability to push to the existing remote repository within the current directory
 (current directory here means the project directory that you are working on)
 
@@ -26,9 +26,12 @@
         repo-hub -c repo or --create repo to create new repository and push to it
         repo-hub -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
+<<<<<<< HEAD
 
 ### What I'll Probably add in the future:
 - [ ] Choice for Public or Private Repositories when creating
 - [ ] pull requests
 - [ ] support for branches (create and push)
 - [ ] merge
+=======
+>>>>>>> a9a8d3c0f37533d3af4478e7ea0011154b28f919
