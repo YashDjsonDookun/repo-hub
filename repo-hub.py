@@ -1,5 +1,8 @@
 import os
+import sys
+import getopt
 
+# commandOne, commandTwo = argv
 current_directory = (os.path.basename(os.getcwd()))
 
 
@@ -11,18 +14,41 @@ def create_repository():
         os.system('git commit -m "Initial Commit"')
         os.system("hub create")
         os.system("git push origin master")
-    except:
-        print("Oops..Something Went Wrong")
+    finally:
+        git_error_status()
 
 
-def push_to_repository(commitArg):
+def push_to_repository(commit_arg):
     try:
         os.system("git add .")
-        os.system(f'git commit -m "{commitArg}"')
+        os.system(f'git commit -m "{commit_arg}"')
         os.system("git push origin master")
-    except:
-        os.system("git status")
+    finally:
+        git_error_status()
 
 
-# create_repository()
-push_to_repository("Fixed readme")
+def git_error_status():
+    print("Oops..Something Went Wrong")
+    print("Performing a git status")
+    os.system("git status")
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "hc:p:", ["create=", "push="])
+except getopt.GetoptError:
+    print('Incorrect Command, Use:')
+    print('    python3 repo-hub.py -h or --help for any help')
+    exit(2)
+for opt, arg in opts:
+    if opt == '-h':
+        print("Usage:")
+        print('    python3 repo-hub.py -c or --create to create new repository and push to it')
+        print('    python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository')
+        exit()
+    elif opt in ("-c", "--create"):
+        create_repository()
+        exit()
+    elif opt in ("-p", "--push"):
+        if len(arg) == 0:
+            print('Usage: python3 repo-hub.py -p or --push "Commit Message" to push to current remote repository')
+        push_to_repository(arg)
+        exit()
