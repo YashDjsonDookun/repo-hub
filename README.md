@@ -17,9 +17,12 @@
     -   provides the ability to push to the existing remote repository within the current directory
 (current directory here means the project directory that you are working on)
 
-### Usage:
+### Usage For Windows Users:
 ~~~
-    python3 repo-hub.py -h or --help for any help
-    python3 repo-hub.py -c or --create to create new repository and push to it
-    python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
+    Add exe to PATH and execute command from desired directory
+    
+    Commands:
+        repo-hub.exe -h or --help for any help
+        repo-hub.exe -c or --create to create new repository and push to it
+        repo-hub.exe -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
