@@ -49,4 +49,5 @@ for opt, arg in opts:
     elif opt in ("-p", "--push"):
         if len(arg) == 0:
             print('Usage: python3 repo-hub.py -p or --push "Commit Message" to push to current remote repository')
+            exit()
         push_to_repository(arg)
