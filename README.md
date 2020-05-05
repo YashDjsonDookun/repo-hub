@@ -26,7 +26,6 @@
         repo-hub -c repo or --create repo to create new repository and push to it
         repo-hub -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
-<<<<<<< HEAD
 
 ### What I'll Probably add in the future (Do not hesitate to contribute if you want):
 - [ ] pull requests
