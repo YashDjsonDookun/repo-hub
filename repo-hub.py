@@ -51,3 +51,4 @@ for opt, arg in opts:
             print('Usage: python3 repo-hub.py -p or --push "Commit Message" to push to current remote repository')
             exit()
         push_to_repository(arg)
+        exit()
