@@ -13,7 +13,7 @@ def create_repository():
         os.system('git commit -m "Initial Commit"')
         os.system("hub create")
         os.system("git push origin master")
-    finally:
+    except:
         git_error_status()
 
 
@@ -22,7 +22,7 @@ def push_to_repository(commit_arg):
         os.system("git add .")
         os.system(f'git commit -m "{commit_arg}"')
         os.system("git push origin master")
-    finally:
+    except:
         git_error_status()
 
 
