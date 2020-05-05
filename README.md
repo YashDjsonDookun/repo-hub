@@ -23,6 +23,6 @@
     
     Commands:
         repo-hub -h or --help for any help
-        repo-hub -c or --create to create new repository and push to it
+        repo-hub -c repo or --create repo to create new repository and push to it
         repo-hub -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
