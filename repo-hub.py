@@ -44,6 +44,10 @@ for opt, arg in opts:
         print('    python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository')
         exit()
     elif opt in ("-c", "--create"):
+        if len(arg) == 0:
+            print("-c / --create does not take any additinal arguments")
+            print('Usage: python3 repo-hub.py -c or --create to create new repository and push to it')
+            exit()
         create_repository()
         exit()
     elif opt in ("-p", "--push"):
