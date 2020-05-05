@@ -19,6 +19,7 @@
 
 ### Usage:
 ~~~
+    python3 repo-hub.py -h or --help for any help
     python3 repo-hub.py -c or --create to create new repository and push to it
     python3 repo-hub.py -p <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
