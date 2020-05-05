@@ -29,7 +29,6 @@
 <<<<<<< HEAD
 
 ### What I'll Probably add in the future:
-- [ ] Choice for Public or Private Repositories when creating
 - [ ] pull requests
 - [ ] support for branches (create and push)
 - [ ] merge
