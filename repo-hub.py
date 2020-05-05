@@ -7,7 +7,7 @@ def create_repository():
     os.system("git init .")
     os.system("git add .")
     os.system('git commit -m "Initial Commit"')
-    os.system("git push origin master")
+    os.system("git push")
     # pass
 
 def push_to_repository():
