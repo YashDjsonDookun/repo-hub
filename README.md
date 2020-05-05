@@ -22,7 +22,7 @@
     Add exe to PATH and execute command from desired directory
     
     Commands:
-        repo-hub.exe -h or --help for any help
-        repo-hub.exe -c or --create to create new repository and push to it
-        repo-hub.exe -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
+        repo-hub -h or --help for any help
+        repo-hub -c or --create to create new repository and push to it
+        repo-hub -p  <"Commit Message"> or --push <"Commit Message"> to push to current remote repository
 ~~~
